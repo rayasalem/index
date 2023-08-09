@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user info</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body>
+    <div class="right-element">
+      <h1> Make your Reservation </h1>
+      <p >    <pre>        Welcome to our reservation form!   </pre></p>
+    </div>
+
+    <div class="container">
+      <form action="index.html" method="post"id="reservationForm">
+        <div class="row">
+          <div class="col-4">
+            <label for="fname">Full Name</label>
+          </div>
+          <div class="col-8">
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="FirstName LastName"
+              class="input"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <label for="email">Email Address</label>
+          </div>
+          <div class="col-8">
+            <input
+              type="email"
+              id="email"
+              placeholder="EMAIL_ADDRESS"
+              required
+              class="input"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <label for="tour-package">Select Tour Package</label>
+          </div>
+          <div class="col-8">
+            <select name="tour-package" id="tour-package"  class ="input"required>
+              <option value="Par">Pp</option>
+              <option value="Bagkok">eo</option>
+              <option value="C">Coi</option>
+              <option value="To">Te</option>
+              <option value="g" selected>go</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <label for="Arrival_DATE">Arrival date</label>
+          </div>
+          <div class="col-8">
+            <input type="date" id="Arrival_DATE" required class="input" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <label for="number">Number of person</label>
+          </div>
+          <div class="col-8">
+            <input
+              type="number"
+              id="number"
+              placeholder="unknown_type"
+              class="input"
+              required
+            />
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-4">
+            <label for="number">What you want to avail?</label>
+          </div>
+          <div class="col-8" >
+            <input type="checkbox" id="avail1" name="avail1" value="Boarding" />
+            <label for="avail1" class="avail"> Boarding</label><br />
+            <input type="checkbox" id="avail2" name="avail2" value="Fooding" />
+            <label for="avail2" class="avail"> Fooding</label><br />
+            <input
+              type="checkbox"
+              id="avail3"
+              name="avail3"
+              value="Sight Seeing"
+              class="avail"
+            />
+            <label for="avail3"> Sight Seeing</label><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <label for="code">coupon code</label>
+          </div>
+          <div class="col-8">
+            <input type="text" id="code" placeholder="unknown_type" required class="input" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <label for="number">Terms and condition</label>
+          </div>
+          <div class="col-8">
+            <legend>
+            <input
+              type="radio"
+              id="term"
+              name="term"
+              value="I agree"
+              class="term"
+              required
+            />
+            <label for="avail1"> I agree</label>
+            <input
+              type="radio"
+              id="term"
+              class="term"
+              name="term"
+              value="I disagree"
+              required
+            />
+            <label for="avail2"> I disagree</label>
+          </div>
+        </div>
+
+        <div >
+          <input  id="submit"type="submit" placeholder="complete reservation" required  />
+        </div>
+       
+<script>
+const form = document.getElementById('reservationForm');
+form.addEventListener('submit', function (event) {
+  event.preventDefault(); 
+  const formData = new FormData(event.target);
+    const username = formData.get("fname");
+    alert("Thank you, " + username + " for submitting the form!");
+});
+</script>
+      </form>
+    </div>
+  </body>
+</html>

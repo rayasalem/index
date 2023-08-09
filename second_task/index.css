@@ -1,0 +1,134 @@
+body {
+  background-image: url("sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  font-size: medium;
+}
+
+.container {
+  font-size: small;
+  border: 1px solid #dfdcdd;
+  padding: 10px;
+  width: 40vw;
+  background-color: #fdf0e7;
+  margin-left: 60px;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+.col-4 {
+  flex-basis: calc(30% - 10px);
+}
+
+.col-8 {
+  flex-basis: calc(50% - 10px);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  margin-top: 0;
+  gap: 20px;
+}
+
+.input {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.input:hover {
+  width: 200px;
+}
+
+#submit {
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+  color: #fdf8fc;
+  background-color: #323133;
+  width: 150px;
+  max-width: 200px;
+  height: 30px;
+  margin-left: 300px;
+  margin-top: 20px;
+}
+#submit:hover {
+  background-color: #a0d6e4;
+}
+@media screen and (max-width: 600px) {
+  #submit {
+    margin-left: 0;
+  }
+}
+
+.term, .avail {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+label {
+  margin-bottom: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: medium;
+  color: #323133;
+}
+
+option {
+  font-size: small;
+  width: 300px;
+}
+
+select {
+  font-size: small;
+  width: 150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+label:hover {
+  font-size: larger;
+}
+
+.right-element {
+  max-width: 400px;
+  margin-top: 200px;
+  margin-right: 100px;
+  position: absolute;
+  right: 90px;
+  font-size: larger;
+  font-style: oblique;
+  font-weight: 800;
+}
+@media screen and (max-width: 600px) {
+  .right-element {
+    position: static;
+    font-weight: normal;
+    font-size: small;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .col-4, .col-8 {
+    width: 100%;
+  }
+  #submit {
+    max-width: 100px;
+    margin-top: 0;
+    margin-left: 0;
+    height: auto;
+  }
+}/*# sourceMappingURL=index.css.map */

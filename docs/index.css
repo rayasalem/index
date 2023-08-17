@@ -1,0 +1,83 @@
+body {
+  background-image: url("sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  font-size: medium;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  font-size: small;
+  border: 1px solid #dfdcdd;
+  padding: 10px;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  background-color: #fdf0e7;
+  border-radius: 70px;
+  gap: 20px;
+}
+.left,
+.right {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+.select-shape {
+  font-size: small;
+  border: 1px solid #dfdcdd;
+  border-radius: 80px;
+  width: 30vw;
+  height: 25vw;
+  max-width: 400px;
+  top: 0;
+  background-color: #fdf0e7;
+  font-style: italic;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  text-align: center;
+  margin-bottom: 400px;
+  margin-left: 20px;
+}
+
+label {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 20px;
+}
+button {
+  background-color: gray;
+  font-weight: bold;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: larger;
+  margin-left: 10px;
+}
+button:hover {
+  background-color: rgb(224, 144, 198);
+}
+select {
+  width: 20vw;
+  font-size: small;
+  width: 150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  margin: 20px;
+}

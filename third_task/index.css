@@ -5,7 +5,6 @@ body {
   background-attachment: fixed;
   box-sizing: border-box;
   font-size: medium;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;

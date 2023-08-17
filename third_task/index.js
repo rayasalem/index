@@ -24,8 +24,11 @@ generateBtn.addEventListener("click", function () {
     newShape.style.borderBottom = "100px solid";
     newShape.style.borderRadius = "0";
   }
-
+if (selectedShape==="triangle"){
+newShape.style.color=selectedColor;}
+else{
   newShape.style.backgroundColor = selectedColor;
+}
   alert("you selected"+shapeSelector.value);
   shapeContainer.innerHTML = "";
   shapeContainer.appendChild(newShape);

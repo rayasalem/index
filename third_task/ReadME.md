@@ -1,4 +1,4 @@
-# Shape Display App
+# Shape Display
 
 A simple web application that allows users to select a shape and its color, and then displays the selected shape with the chosen color.
 
@@ -11,7 +11,7 @@ A simple web application that allows users to select a shape and its color, and 
 
 ## Description
 
-The Shape Display App is a web application built using HTML, CSS, and JavaScript. It provides a user-friendly interface to select a shape (circle, square, or triangle) and a color (red, yellow, green, or blue), and then instantly displays the selected shape in the chosen color.
+The Shape Display is a website  built using HTML, CSS, and JavaScript. It provides a user-friendly interface to select a shape (circle, square, or triangle) and a color (red, yellow, green, or blue), and then instantly displays the selected shape in the chosen color.
 
 ## Features
 
